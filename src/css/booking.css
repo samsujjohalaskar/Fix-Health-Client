@@ -1,0 +1,118 @@
+.bookings {
+    padding: 30px;
+    color: black;
+    width: 400px;
+}
+
+.booking-content {
+    background-color: rgb(175, 170, 170);
+    /* padding: 20px; */
+}
+
+.booking-content-heading {
+    display: flex;
+    flex-direction: column;
+    width: 346px;
+    text-align: center;
+}
+
+.booking-content-heading h3 {
+    color: #007aff;
+}
+
+.booking-content-heading h5 {
+    color: rgb(86, 99, 123);
+    font-weight: bolder;
+}
+
+
+.bookings input {
+    outline: none;
+}
+
+.booking-inputs {
+    display: flex;
+    flex-flow: column;
+    margin-top: 40px;
+}
+
+input,
+textarea {
+    background-color: rgb(175, 170, 170);
+    /* color: black; */
+    padding: 8px;
+    margin: 5px 0 5px 0;
+    border: 0px solid #777;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+
+select {
+    /* background-color: white; */
+    /* color: black; */
+    padding: 8px;
+    margin: 5px 0 5px 0;
+    border-bottom: 1px solid black;
+}
+
+.get-started-button {
+    margin-top: 40px;
+    /* color: white; */
+    background-color: #007aff;
+    padding: 10px;
+    border: 0px solid;
+    font-weight: bolder;
+}
+
+.disabled {
+    background-color: grey !important;
+    cursor: not-allowed;
+}
+
+.steps-span {
+    float: right;
+    background-color: #007aff;
+    color: white;
+    font-size: 14px;
+    padding: 3px 10px 3px 10px;
+    border-radius: 50%;
+}
+
+.booking-buttons {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.regular-buttons {
+    margin-top: 10px;
+    /* color: rgb(224, 215, 215); */
+    background-color: #007aff;
+    padding: 10px;
+    border: 0px solid;
+    font-weight: bolder;
+}
+
+.regular-back-buttons {
+    margin-top: 10px;
+    /* color: rgb(225, 220, 220); */
+    background-color: grey;
+    padding: 10px;
+    border: 0px solid;
+    font-weight: bolder;
+}
+
+.booking-inputs-label {
+    text-align: center;
+    color: rgb(86, 99, 123);
+}
+
+.bookings-label-inputs {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 12px -5px;
+    border-radius: 8px;
+    padding: 5px;
+}
