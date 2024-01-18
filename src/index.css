@@ -1,7 +1,275 @@
+body {
+  background-color: #27374D;
+}
+
 .flex {
   display: flex;
 }
 
 .card {
   border-radius: .7rem;
+}
+
+.apoinment-cont {
+  background-color: #526D82;
+  box-shadow: #6493b1 0px 0px 0px 5px;
+}
+
+.booking-content-heading h3 {
+  color: #9DB2BF;
+}
+
+.booking-content-heading h5 {
+  color: #27374D;
+  font-weight: bolder;
+}
+
+input,
+textarea {
+  background-color: #DDE6ED;
+  color: #27374D;
+  padding: 8px;
+  margin: 5px 0 5px 0;
+  border: 0px solid #777;
+  outline: none;
+}
+
+.disabled {
+  background-color: #DDE6ED !important;
+  cursor: not-allowed;
+  color: #9DB2BF !important;
+}
+
+.get-started-button {
+  margin-top: 40px;
+  color: #9DB2BF;
+  background-color: #27374D;
+  padding: 10px;
+  border: 0px solid;
+  font-weight: bolder;
+}
+
+.steps-span {
+  float: right;
+  background-color: #27374D;
+  color: #DDE6ED;
+  font-size: 14px;
+  padding: 3px 10px 3px 10px;
+  border-radius: 50%;
+}
+
+.regular-back-buttons {
+  margin-top: 10px;
+  color: #27374D;
+  background-color: #526D82;
+  padding: 10px;
+  border: 0px solid;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.regular-buttons {
+  padding: 0px 30px 0px 30px;
+  margin-top: 10px;
+  color: #9DB2BF;
+  background-color: #27374D;
+  font-weight: bolder;
+  border: 0px solid;
+}
+
+select {
+  background-color: #27374D;
+  color: #9DB2BF;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  outline: none;
+}
+
+.booking-inputs-label {
+  margin-bottom: 5px;
+  text-align: center;
+  color: #DDE6ED;
+}
+
+.bookings-label-inputs-boxes {
+  height: 20px;
+  width: 20px;
+}
+
+.bookings-label-inputs {
+  color: #DDE6ED;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: #27374D 0px 0px 8px -5px;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.booking-inputs {
+  display: flex;
+  flex-flow: column;
+  margin-top: 30px;
+}
+
+.bookings {
+  padding: 30px;
+  align-items: center;
+}
+
+.booking-content-heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bookings input {
+  outline: none;
+}
+
+.booking-buttons {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.testimonial-heading {
+  color: #DDE6ED;
+}
+
+.doctors-overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.doctors-modal {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease;
+}
+
+.cardi {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 300px;
+  margin-right: 35px;
+  background-color: #18283d;
+  border-radius: 30px;
+  overflow: hidden;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.cardi img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cardi-content {
+  text-align: center;
+}
+
+.cardi-content h5 {
+  color: #DDE6ED;
+}
+
+.cardi-content p {
+  text-wrap: wrap;
+}
+
+.testimonial-statement {
+  color: #9DB2BF;
+}
+
+h1 {
+  color: #DDE6ED;
+}
+
+.lead {
+  color: #9DB2BF;
+  font-weight: 500;
+}
+
+.custom-class {
+  background: url('../src/assets/hero.jpg') center / cover no-repeat;
+  background-color: #444;
+  background-blend-mode: overlay;
+}
+
+.doc-cards-container {
+  max-width: 1251px;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 530px;
+  overflow-x: auto;
+}
+
+.doc-sugg-heading h2 {
+  color: #DDE6ED;
+}
+
+.doc-sug-buttons {
+  padding: 8px 50px 8px 50px;
+  margin-top: 10px;
+  color: #9DB2BF;
+  background-color: #27374D;
+  font-weight: bolder;
+  border: 0px solid;
+  border-radius: 5px;
+}
+
+.doc-cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  background-color: #526D82;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #DDE6ED;
+}
+
+.card-body h6 {
+  color: #DDE6ED;
+}
+
+.card-body p {
+  color: #9DB2BF;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px;
 }

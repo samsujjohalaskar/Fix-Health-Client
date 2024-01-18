@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { BASE_URL } from '../utils/services';
-import "../css/docSuggestions.css";
 import { useNavigate } from 'react-router-dom';
+import { GiCancel } from "react-icons/gi";
 
-const DocSuggestions = ({ city, formData }) => {
+const DocSuggestions = ({ city }) => {
     const [doctors, setDoctors] = useState([]);
     const [loader, setLoader] = useState(false);
     const navigate = useNavigate();
@@ -33,28 +33,35 @@ const DocSuggestions = ({ city, formData }) => {
         };
 
         fetchDoctors();
-    }, [city]);
+    }, [city,formattedCity]);
 
     const handleBooking = (data) => {
         window.alert("Booking Success!");
-        console.log("Surgeon Data:", data, "User Data:", formData);
-        navigate("/")
+        console.log("Surgeon Data:", data);
+        navigate("/");
+    }
+
+    const handleCancel = () => {
+        navigate("/");
     }
 
     return (
         <>
             {loader ? <h1>Finding Best Doctors for You...</h1> :
                 <>
-                    <h2>Best Doctors in {formattedCity}</h2>
+                    <div className='doc-sugg-heading d-flex justify-content-between'>
+                        <h2>Best Doctors in {formattedCity}</h2>
+                        <h2 style={{cursor: "pointer"}} onClick={() => handleCancel()}><GiCancel /></h2>
+                    </div>
                     <div className='doc-cards-container'>
                         {doctors.data && doctors.data.map((d, index) => (
                             <div className="card" style={{ width: '18rem' }}>
-                                <img className="card-img-top" src={`https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(${index + 1}).webp`} alt="Card image cap" />
+                                <img className="card-img-top" src={`https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(${index + 1}).webp`} alt="User" />
                                 <div className="card-body">
                                     <h5 className="card-title">{d.name}</h5>
                                     <h6 className="card-text">{d.expertise}</h6>
                                     <p className="card-text">{d.email}</p>
-                                    <button onClick={() => handleBooking(d)} className="btn btn-primary">Book</button>
+                                    <button onClick={() => handleBooking(d)} className="doc-sug-buttons">Book</button>
                                 </div>
                             </div>
                         ))}

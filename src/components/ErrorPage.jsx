@@ -10,7 +10,7 @@ const ErrorPage = () => {
     return (
         <div>
             <h1>This Page Does Not Exist</h1>
-            <a onClick={handleGoHome}>home</a>
+            <h2 onClick={handleGoHome} style={{cursor: "pointer"}}>Back Homepage?</h2>
         </div>
     )
 }
