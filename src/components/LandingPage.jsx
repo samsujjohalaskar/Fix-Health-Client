@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import "../css/landing.css";
 import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
@@ -15,24 +15,24 @@ const LandingPage = () => {
 
     const sliderRef = useRef(null);
 
-    const handleScroll = (direction) => {
+    const handleScroll = () => {
         const container = sliderRef.current;
         if (container) {
-            const scrollAmount = 1; // Adjust this value based on your preference
-            const scrollStep = 15; // Adjust this value for the step size
+            const scrollStep = 1; // Adjust this value for the step size
 
-            if (direction === 'left') {
-                container.scrollLeft -= scrollStep;
-            } else {
-                container.scrollLeft += scrollStep;
-            }
+            container.scrollLeft += scrollStep;
 
-            // Recursive call for smoother scrolling
-            if (scrollAmount > 0) {
-                requestAnimationFrame(() => handleScroll(direction));
+            if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
+                container.scrollLeft = 0;
             }
         }
     };
+    
+    useEffect(() => {
+        const intervalId = setInterval(handleScroll, 50); // Adjust the interval duration based on your preference
+
+        return () => clearInterval(intervalId);
+    }, []);
 
     return (
         <>
@@ -125,8 +125,6 @@ const LandingPage = () => {
                             </div>
                         </div>
                     </div>
-                    <span className='navigation-arrows' onClick={() => handleScroll('left')}><FaChevronLeft /></span>
-                    <span className='navigation-arrows' onClick={() => handleScroll('right')}><FaChevronRight /></span>
                 </div>
                 {city && actualData &&
                     <div className="doctors-overlay">
