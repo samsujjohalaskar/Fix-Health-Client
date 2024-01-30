@@ -43,7 +43,7 @@ const LandingPage = () => {
                 <div className="align-self-center text-center text-light col-md-8 offset-md-2">
                     <div className="lc-block mb-4">
                         <div editable="rich">
-                            <h1 className="display-1 fw-bolder">Get quick and lasting pain relief with FixHealth</h1>
+                            <h1 className="display-1 fw-bolder">Get quick and lasting pain relief with FixMyHealth</h1>
                         </div>
                     </div>
 
@@ -89,9 +89,7 @@ const LandingPage = () => {
                         <div className="col-md-10 col-xl-8 text-center testimonial-heading">
                             <p className="fw-bold mb-3 fs-1">Testimonials</p>
                             <p className="mb-4 pb-2 mb-md-5 pb-md-0">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
-                                numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
-                                quisquam eum porro a pariatur veniam.
+                            Discover the transformative experiences shared by our clients regarding our top-notch physiotherapy services. Our clients consistently praise our professional and knowledgeable physiotherapists who go above and beyond to ensure their comfort and progress.
                             </p>
                         </div>
                     </div>
@@ -102,7 +100,7 @@ const LandingPage = () => {
                             <div className="cardi-content mt-3">
                                 <h5 className="font-weight-bold">Raghab Sharma</h5>
                                 <p className='text-warning h4'><BiSolidQuoteLeft /></p>
-                                <p className='testimonial-statement px-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur</p>
+                                <p className='testimonial-statement px-3'>Professional and knowledgeable physiotherapists. Highly recommended!</p>
                                 <p className='text-warning h4 mb-4'><BiSolidQuoteRight /></p>
                             </div>
                         </div>
@@ -112,7 +110,7 @@ const LandingPage = () => {
                             <div className="cardi-content mt-3">
                                 <h5 className="font-weight-bold">Aditi Pallikal</h5>
                                 <p className='text-warning h4'><BiSolidQuoteLeft /></p>
-                                <p className='testimonial-statement px-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur</p>
+                                <p className='testimonial-statement px-3'>Exceptional service! The physiotherapist provided personalized care and effective treatment.</p>
                                 <p className='text-warning h4 mb-4'><BiSolidQuoteRight /></p>
                             </div>
                         </div>
@@ -122,7 +120,7 @@ const LandingPage = () => {
                             <div className="cardi-content mt-3">
                                 <h5 className="font-weight-bold">Sneha Patra</h5>
                                 <p className='text-warning h4'><BiSolidQuoteLeft /></p>
-                                <p className='testimonial-statement px-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur</p>
+                                <p className='testimonial-statement px-3'>I was amazed by the results! The physiotherapy sessions significantly improved my mobility and reduced pain.</p>
                                 <p className='text-warning h4 mb-4'><BiSolidQuoteRight /></p>
                             </div>
                         </div>
@@ -132,7 +130,7 @@ const LandingPage = () => {
                             <div className="cardi-content mt-3">
                                 <h5 className="font-weight-bold">Raj Bansal</h5>
                                 <p className='text-warning h4'><BiSolidQuoteLeft /></p>
-                                <p className='testimonial-statement px-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur</p>
+                                <p className='testimonial-statement px-3'>Great experience overall! The physiotherapist was attentive, caring, and helped me recover from my injury.</p>
                                 <p className='text-warning h4 mb-4'><BiSolidQuoteRight /></p>
                             </div>
                         </div>
@@ -141,7 +139,7 @@ const LandingPage = () => {
                             <div className="cardi-content mt-3">
                                 <h5 className="font-weight-bold">Sohail Khan</h5>
                                 <p className='text-warning h4'><BiSolidQuoteLeft /></p>
-                                <p className='testimonial-statement px-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur</p>
+                                <p className='testimonial-statement px-3'>Outstanding service! The physiotherapy sessions were tailored to my needs, and I saw remarkable progress.</p>
                                 <p className='text-warning h4 mb-4'><BiSolidQuoteRight /></p>
                             </div>
                         </div>
@@ -150,7 +148,7 @@ const LandingPage = () => {
                             <div className="cardi-content mt-3">
                                 <h5 className="font-weight-bold">Trinadh Kapoor</h5>
                                 <p className='text-warning h4'><BiSolidQuoteLeft /></p>
-                                <p className='testimonial-statement px-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur</p>
+                                <p className='testimonial-statement px-3'>I am extremely grateful for the exceptional care provided by the physiotherapist. Their expertise and dedication played a crucial role in my recovery journey.</p>
                                 <p className='text-warning h4 mb-4'><BiSolidQuoteRight /></p>
                             </div>
                         </div>
@@ -169,6 +167,7 @@ const LandingPage = () => {
                         `}
                 </script>
             </section>
+            <section className='footer'>© 2023 FixMyHealth. All Rights Reserved.</section>
         </>
     )
 }
