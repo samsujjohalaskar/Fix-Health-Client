@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { BASE_URL } from '../utils/services';
 import { useNavigate } from 'react-router-dom';
 import { GiCancel } from "react-icons/gi";
+import { Watch } from 'react-loader-spinner';
 
 const DocSuggestions = ({ city }) => {
     const [doctors, setDoctors] = useState([]);
-    const [loader, setLoader] = useState(false);
+    const [loader, setLoader] = useState(true);
     const navigate = useNavigate();
 
     function capitalizeFirstLetter(str) {
@@ -47,7 +48,7 @@ const DocSuggestions = ({ city }) => {
 
     return (
         <>
-            {loader ? <h1>Finding Best Doctors for You...</h1> :
+            {loader ? <h1 style={{display: "flex", justifyContent: "space-between",alignItems:"center", flexFlow:"column",gap:"15px"}}>Finding Best Doctors for You. <Watch visible={true} height="80" width="80" color="#DDE6ED" radius="48" ariaLabel="watch-loading" wrapperStyle={{}} wrapperClass="" /></h1> :
                 <>
                     <div className='doc-sugg-heading d-flex justify-content-between'>
                         <h2>Best Doctors in {formattedCity}</h2>
